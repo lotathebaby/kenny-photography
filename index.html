@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Kenny Photography</title>
+  </head>
+  <body>
+    <!-- Hero section -->
+    <header
+      class="header sticky top-0 bg-white/70 backdrop-blur-md items-center z-50 flex p-4 justify-between"
+    >
+      <div class="logo-text">
+        <p class="font-extrabold">Kenny's photography</p>
+      </div>
+      <nav class="nav">
+        <ul class="flex gap-4">
+          <li>
+            <a class="hover:text-amber-500 transition-colors" href="#hero"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-amber-500 transition-colors" href="#portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-amber-500 transition-colors" href="#rates"
+              >Rates</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-amber-500 transition-colors" href="#about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-amber-500 transition-colors" href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero" class="hero p-8 h-[40vh] md:h-[60vh] relative">
+      <div
+        class="hero-overlay absolute inset-0 bg-black/60 flex justify-center items-center"
+      >
+        <div class="hero-text z-50 text-center p-6">
+          <h2 class="text-5xl text-white font-bold tracking-wide">
+            Kenny's Photography
+          </h2>
+          <p class="text-white text-md">
+            Capture special moments with the best lens possible.
+          </p>
+          <button
+            class="p-4 m-4 rounded-md bg-gradient-to-r from-amber-500 to bg-orange-600"
+          >
+            Book a Session
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio m-8">
+      <h2 class="text-3xl font-bold text-center mb-2">Portfolio</h2>
+      <p class="text-center text-gray-600 mb-12">
+        A glimpse of my photography style.
+      </p>
+
+      <div class="photos grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="photo">
+          <img
+            class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            src="photos/photo-7.avif"
+            alt="photo"
+          />
+        </div>
+        <div class="photo">
+          <img
+            class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            src="photos/photo-8.avif"
+            alt="photo"
+          />
+        </div>
+        <div class="photo">
+          <img
+            class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            src="photos/photo-9.avif"
+            alt="photo"
+          />
+        </div>
+        <div class="photo">
+          <img
+            class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            src="photos/photo-10.avif"
+            alt="photo"
+          />
+        </div>
+        <div class="photo">
+          <img
+            class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            src="photos/photo-11.avif"
+            alt="photo"
+          />
+        </div>
+        <div class="photo">
+          <img
+            class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            src="photos/photo-12.avif"
+            alt="photo"
+          />
+        </div>
+        <div class="photo">
+          <img
+            class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            src="photos/photo-13.avif"
+            alt="photo"
+          />
+        </div>
+        <div class="photo">
+          <img
+            class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            src="photos/photo-14.avif"
+            alt="photo"
+          />
+        </div>
+        <div class="photo">
+          <img
+            class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            src="photos/photo-15.avif"
+            alt="photo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="rates" class="rates py-16 px-6 bg-gray-50">
+      <h3 class="text-4xl font-bold text-center mb-12">Rate Cards</h3>
+      <div
+        class="rate-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 hover:scale-105 transition"
+      >
+        <div
+          class="card min-h-[220px] flex flex-col justify-between hover:shadow-xl bg-white rounded-lg shadow-lg p-6 items-center text-center transition-transform hover:scale-105"
+        >
+          <h4 class="service text-xl font-semibold">
+            Professional Event Photography
+          </h4>
+          <p class="price text-amber-500 text-2xl font-bold">$300</p>
+          <p class="description text-gray-500 md:text-base text-sm">
+            Let us help you capture your events with our professional
+            photography skills. We create beautiful memories for you to help you
+            remember your favourite day.
+          </p>
+          <button
+            class="p-4 m-4 hover:scale-105 hover:shadow-md transition rounded-md bg-gradient-to-r from-amber-500 to bg-orange-600"
+          >
+            Book a Session
+          </button>
+        </div>
+
+        <div
+          class="card min-h-[220px] hover:shadow-xl bg-white rounded-lg shadow-lg p-6 flex flex-col justify-between items-center text-center transition-transform hover:scale-105"
+        >
+          <h4 class="service text-xl font-semibold">Portrait Photography</h4>
+          <p class="price text-amber-500 text-2xl font-bold">$240</p>
+          <p class="description text-gray-500 md:text-base text-sm">
+            Are you a model or make-up artist? Let us help you capture images
+            that place you at the top of your competition. We are skilled at
+            different aspects of portrait photography to suit your specific
+            needs.
+          </p>
+          <button
+            class="p-4 m-4 rounded-md bg-gradient-to-r hover:scale-105 hover:shadow-md transition from-amber-500 to bg-orange-600"
+          >
+            Book a Session
+          </button>
+        </div>
+
+        <div
+          class="card min-h-[220px] hover:shadow-xl bg-white rounded-lg shadow-lg p-6 flex flex-col justify-between items-center text-center transition-transform hover:scale-105"
+        >
+          <h4 class="service text-xl font-semibold">Casual Photography</h4>
+          <p class="price text-amber-500 text-2xl font-bold">$150</p>
+          <p class="description text-gray-500 md:text-base text-sm">
+            Do you enjoy having shoots to enlighten your mood? Do you want
+            something unique and casual. We are trained to meet your your
+            specific requests. We take casual pictures for individuals, groups,
+            and gatherings.
+          </p>
+          <button
+            class="p-4 m-4 rounded-md bg-gradient-to-r hover:scale-105 hover:shadow-md transition from-amber-500 to bg-orange-600"
+          >
+            Book a Session
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about px-4 md:px-12 py-4 text-justify">
+      <h2 class="text-xl font-extrabold">About Kenny's Photography...</h2>
+      <div
+        class="about-sect grid grid-cols-1 md:grid-cols-2 items-center gap-6 m-6"
+      >
+        <img
+          src="/photos/photographer.avif"
+          alt="photographer"
+          class="rounded-md shadow-lg"
+        />
+        <p class="text-lg leading-relaxed">
+          Hi, I'm Kenny - a lifestyle professional photographer for over 7 years
+          based in Manitoba, Canada. I enjoy capturing real, candid moments that
+          tell stories. From family gatherings to weddings to personal shoots,
+          the goal remains to make you comfortable in front of the camera and
+          deliver photos that you will love to revisit for years.
+        </p>
+      </div>
+    </section>
+    <section id="contact" class="contact p-8 bg-gray-50 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Let's capture your moments</h2>
+      <p class="mb-6">
+        Whether it is your wedding day, a family gathering, or a personal shoot,
+        I'd love to create timeless memories for you. Get in touch and let's
+        make it happen.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="contact-info space-y-2">
+          <p class="email">
+            <strong>Email: </strong>
+            <a href="mailto:kenny@kennyphotos.ca">kenny@kennyphotos.ca</a>
+          </p>
+          <p class="phone">
+            <strong>Phone: </strong
+            ><a href="tel:+12047304415">+1 (204) 730-4415</a>
+          </p>
+          <p class="address">
+            <strong>Address: </strong>123 boulevard rd, Brandon, Canada
+          </p>
+        </div>
+        <form class="form">
+          <label for="name">Name: </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            class="p-2 border rounded-md w-full"
+          />
+
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="p-2 border rounded-md w-full"
+          />
+
+          <label for="message">Message: </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            class="p-2 border rounded-md w-full"
+          ></textarea>
+
+          <button
+            class="p-4 m-4 rounded-md bg-gradient-to-r hover:scale-105 hover:shadow-md transition from-amber-500 to bg-orange-600"
+          >
+            Book a Session
+          </button>
+        </form>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
