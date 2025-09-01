@@ -9,41 +9,73 @@
   <body>
     <!-- Hero section -->
     <header
-      class="header sticky top-0 bg-white/70 backdrop-blur-md items-center z-50 flex p-4 justify-between"
+      class="sticky top-0 z-50 flex justify-between items-center p-4 bg-white/80 backdrop-blur-md"
     >
-      <div class="logo-text">
-        <p class="font-extrabold">Kenny's photography</p>
-      </div>
-      <nav class="nav">
-        <ul class="flex gap-4">
-          <li>
-            <a class="hover:text-amber-500 transition-colors" href="#hero"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-amber-500 transition-colors" href="#portfolio"
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-amber-500 transition-colors" href="#rates"
-              >Rates</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-amber-500 transition-colors" href="#about"
-              >About</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-amber-500 transition-colors" href="#contact"
-              >Contact</a
-            >
-          </li>
-        </ul>
+      <div class="logo-text font-bold text-lg">Kenny's Photography</div>
+
+      <!-- Hamburger Button -->
+      <button id="menuBtn" class="md:hidden p-2 focus:outline-none">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex gap-6">
+        <a href="#hero" class="hover:text-amber-500">Home</a>
+        <a href="#portfolio" class="hover:text-amber-500">Portfolio</a>
+        <a href="#rates" class="hover:text-amber-500">Rates</a>
+        <a href="#about" class="hover:text-amber-500">About</a>
+        <a href="#contact" class="hover:text-amber-500">Contact</a>
       </nav>
     </header>
+
+    <!-- Mobile Menu & Backdrop -->
+    <div
+      id="backdrop"
+      class="fixed inset-0 bg-black/50 backdrop-blur-md hidden z-40"
+    ></div>
+    <div
+      id="mobileMenu"
+      class="fixed top-0 right-0 w-64 h-full bg-white/90 backdrop-blur-md transform translate-x-full z-60 transition-transform duration-300 shadow-lg rounded-l-lg flex flex-col p-6"
+    >
+      <!-- Close button -->
+      <button id="closeBtn" class="self-end p-2 mb-4">
+        <svg
+          class="w-6 h-6 text-gray-800"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+
+      <!-- Mobile links -->
+      <nav class="flex flex-col gap-6 mt-4">
+        <a href="#hero" class="text-lg hover:text-amber-500">Home</a>
+        <a href="#portfolio" class="text-lg hover:text-amber-500">Portfolio</a>
+        <a href="#rates" class="text-lg hover:text-amber-500">Rates</a>
+        <a href="#about" class="text-lg hover:text-amber-500">About</a>
+        <a href="#contact" class="text-lg hover:text-amber-500">Contact</a>
+      </nav>
+    </div>
+
     <section id="hero" class="hero p-8 h-[40vh] md:h-[60vh] relative">
       <div
         class="hero-overlay absolute inset-0 bg-black/60 flex justify-center items-center"
